@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.content_main {
+    overflow-y: auto;
+}
+.main_photo {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.content_description {
+    background-color: #000000;
+    margin-top: -5px;
+    padding: 0;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+    align-items: center;
+}
+
+.content_names_tituto {
+    width: calc(100vw - 200px);
+}
+
+.main_names {
+    width: 100%;
+    font-family: MeaCulpa;
+    font-size: 42pt;
+}
+
+.jeni_titulo {
+}
+
+.y_titulo {
+    margin-top: -20px;
+    text-align: center;
+}
+.esau_titulo {
+    margin-top: -35px;
+    text-align: right;
+}
+
+@font-face {
+  font-family: 'ImperialScript';
+  src: url('assets/font/ImperialScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay_Regular';
+  src: url('assets/font/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay_Italic';
+  src: url('assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FleurDeLeah';
+  src: url('assets/font/FleurDeLeah-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MeaCulpa';
+  src: url('assets/font/MeaCulpa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zain';
+  src: url('assets/font/Zain-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.txt_nos_casamos {
+    width: 100vw;
+    text-align: center;
+    font-size: 20pt;
+    font-family: PlayfairDisplay_Regular;
+    margin-bottom: 20px;
+}
+.underline {
+    width: 80vw;
+    margin-top: 5px;
+    border-top: 1px groove #FFFFFF;
+}
+.txt_estas_invitado {
+    font-family: ImperialScript;
+    font-size: 30pt;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.txt_parrafo_1 {
+    text-align: center;
+    font-family: Zain;
+    font-size: 16pt;
+}
+
+
+.content_temporizador {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.fragmento_temporizador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.esfera_tiempo {
+    background: #FFFFFF; /* color similar al de la imagen */
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: Zain;
+    line-height: 1;
+}
+
+.num_temporizador {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.txt_temporizador {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 4px;
+    font-family: Zain;
+}
+
+#floating-dots {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.dot {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco con transparencia */
+    border-radius: 50%;
+    opacity: 0;
+    animation: flicker 1.5s infinite ease-in-out;
+    filter: blur(0.3px); /* Efecto de luz suave */
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1); } /* Pequeño efecto de "pulso" */
+}
