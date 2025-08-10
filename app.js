@@ -56,3 +56,8 @@ function createDot() {
 
 // Mayor densidad: puntos cada 150ms
 setInterval(createDot, 150);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) metaTheme.setAttribute('content', '#000000');
+});
